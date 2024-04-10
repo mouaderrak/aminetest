@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éducation mentale</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Éducation mentale </h1>
+        <div id="user-info">
+            <img src="https://www.pngitem.com/pimgs/m/4-40070_user-staff-man-profile-user-account-icon-jpg.png " alt="Profile Image">
+            
+            <!-- Replace <boutton> with <button> -->
+            <button class="username">Compte d'utilisateur</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Use buttons instead of <div> for boxes -->
+            <button class="box">
+                <i class="fas fa-image fa-3x"></i>
+                <h2>Image</h2>
+            </button>
+            
+                <!-- Use buttons instead of <div> for boxes -->
+                <button class="box" onclick="redirectToVideoPage()">
+                    <i class="fas fa-video fa-3x"></i>
+                    <h2>Video</h2>
+                </button>
+            
+            <button class="box">
+                <i class="fas fa-file-alt fa-3x"></i>
+                <h2>Document</h2>
+            </button>
+            <button class="box">
+                <i class="fas fa-dumbbell fa-3x"></i>
+                <h2>Exercice</h2>
+            </button>
+            <button class="box">
+                <i class="fas fa-lightbulb fa-3x"></i>
+                <h2>Solution</h2>
+            </button>
+        </div>
+    </main>
+       
+
+    <script>
+        // JavaScript function to redirect to niveau.html
+        function redirectToVideoPage() {
+            window.location.href = "niveau.html";
+        }
+    </script>
+       
+</body>
+</html>

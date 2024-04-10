@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+    <link rel="stylesheet" href="s'inscrire.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <h1>Registration Form</h1>
+        <form id="registrationForm" action="se connecter.html" method="POST">
+            <div class="input-box">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="input-box">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="input-box">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="input-box">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="education-level">Education Level</label>
+                <select id="education-level" name="education-level">
+                    <option value="Education Level">Education Level:</option>
+                    <option value="Electromécanique des Systèmes Automatisés">Electromécanique des Systèmes Automatisés</option>
+                    <option value="Energies Renouvelables Eoliennes ">Energie Renouvelables Eoliennes </option>
+                    <option value=" Energies Renouvelables Solaires">' Energies Renouvelables Solaires</option>
+                    <option value=" Thermique Industrielle"> Thermique Industrielle</option>
+                    <option value="Technicien en Electricité Industrielle">Technicien en Electricité Industrielle</option>
+                    <option value="Ouvrier Qualifié en Electricité option Entretien Electrique">Ouvrier Qualifié en Electricité option Entretien Electrique</option>
+                    <option value="Plombier Chauffagiste">Plombier Chauffagiste</option>
+                    <option value="Maintenance Industrielle">Maintenance Industrielle</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to newsletter</label>
+            </div>
+            <div class="input-box">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" class="button">S'inscrire</button>
+        </form>
+    </div>
+    <script>
+        function validateFields() {
+            var nom = document.getElementById('nom').value;
+            var prenom = document.getElementById('prenom').value;
+
+            if (nom !== '' && prenom !== '') {
+                window.location.href = "connecter.html";
+            } else {
+                alert('الرجاء ملء جميع الحقول أولاً.');
+            }
+        }
+    </script> 
+</body>
+</html>

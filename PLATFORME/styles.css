@@ -1,0 +1,65 @@
+body {
+    background-color: #f0f0f0; /* Change the color as needed */
+    background-image: url('https://cdn.leonardo.ai/users/a316c5d9-2ef3-4af1-98aa-ed7c04918c37/generations/2c869549-a261-4bab-b413-14869cac6b77/Default_A_human_brain_is_on_top_of_a_book_to_read_and_learn_an_0.jpg'); /* Change the URL to your image */
+    background-size: cover; /* لتغطية كامل المساحة */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+
+#user-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box i {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    text-align: center;
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}

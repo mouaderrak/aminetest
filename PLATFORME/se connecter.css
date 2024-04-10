@@ -1,0 +1,140 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/801/37/desktop-wallpaper-mind-education-for-decor-education.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Set text color to white for better visibility on the background */
+}
+
+/* Wrapper styles */
+.wrapper {
+    width: 90%; /* تحديد العرض بنسبة مئوية للمحتوى لتكون ملائمة للهواتف */
+    margin: 50px auto;
+    background-color: rgba(30, 32, 30, 0.7); /* تعيين لون مع شفافية */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(238, 237, 237, 0.1);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #dfdfdf;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #ebe7e7;
+}
+
+.remember-forgot {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* توزيع العناصر بالتساوي */
+    align-items: center; /* توسيط العناصر بشكل رأسي */
+}
+
+.remember-me {
+    text-align: left; /* تحديد توجيه النص إلى اليسار */
+    flex-grow: 1; /* لتمتد العنصر على كل المساحة المتبقية */
+}
+
+.forgot-password {
+    text-align: right; /* تحديد توجيه النص إلى اليمين */
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px 30px; /* تعديل حجم الزر */
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px; /* تعديل حجم الخط */
+    margin-top: 20px; /* Add margin between buttons */
+    margin-bottom: 20px; /* Add margin between buttons */
+    position: relative; /* Adjust position of pseudo element */
+}
+
+.button::before { /* Adding pseudo element for centering text */
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.google-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.google-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.google-button:hover {
+    border-color: #007bff;
+}
+
+/* تحديد التفاعل مع أنواع الأجهزة */
+@media (min-width: 768px) {
+    /* تعديلات CSS للحواسيب */
+    .wrapper {
+        width: 400px; /* استعادة العرض الأصلي للصندوق للحواسيب */
+        margin: 50px auto; /* استعادة الهامش الأصلي للصندوق للحواسيب */
+        background-size: auto; /* تعيين حجم الصورة حسب الحاجة */
+    }
+}

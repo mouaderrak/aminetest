@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se Connecter</title>
+    <link rel="stylesheet" href="se connecter.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>BIENVENUE DANS ESPRIT D'EDUCATION</h1>
+        <form id="loginForm" action="">
+            <p>SE CONNECTER</p>
+            
+            <!-- Email Input -->
+            <div class="input-box">
+                <input type="text" id="email" name="email" placeholder="Adresse-email">
+            </div>
+            <!-- Password Input -->
+            <div class="input-box">
+                <input type="password" id="mot-de-passe" name="mot-de-passe" placeholder="Mot de passe">
+            </div>
+            <!-- Remember Me and Forgot Password -->
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Mot de passe oublié</a>
+            </div>
+            <!-- Se Connecter Button -->
+            <button type="button" class="button" onclick="validateLogin()">Se connecter</button>
+            <!-- S'inscrire Button -->
+            <button type="button" class="button" onclick="redirectToInscription()">S'inscrire</button>
+        </form>
+        <!-- Google Sign In Button -->
+        <div class="google-button-container">
+            <button type="button" id="googleSignIn" class="google-button">
+                <img class="XNo5Ab" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAvVBMVEVHcEz8/f3////////+/v7s7u/6+vr5+vr5+vr9/f3////////5+vr////////Kzs/////////9/v74+fn4+fn////8vwbsTkJFiPPrQjI7q1gpp00yqVPrSTlAhfX9/f2hv/nwgHj2tLGt2bkqe/Q2gPV+qPd7woza5f2WuPns8v5ZtnHD48n92Yj80Wn+6sD4yMXtZ13znpn8xSnwuh3v6+WIwbFwoPb0qKPpKxT1mx7AtydjuXgcpjNCk8nTYqeQAAAAFXRSTlMA5d2fnApdnVLJpWJiowsJZNGXl5g9ng+vAAABP0lEQVQokY2S2XqCMBCFQVGWulRbkIRABASK0FZtq3Z9/8fqZCDK0oueCzJf/sxhJhlF+Z/G1kJVF9a4T2ZD+6LhrM1u7ZZumsyyO5pe2RQ3+O4Qhoddbd32jHzigwiJms4jTAvJqtb7GekIoSbC0F+tCNnvCSFhZawhRE/I84UfP4eyKMEMEXxA3lunYqN2fXZe/ajbjvA1YX10HIeLjXyNyrcQmwAHsD45zgue3gSozQPEgx50UYmELdtTmqYngNJ2WRVEY1nIOnATsS5lK5+MenUr28ANUtmKIvxij1KGuaUbuFgPxxvSxd4Xo9TzisLz2E+SS1e4eCylgFzK4Aj7PuJLVBevTPBfMSQxBp+qsol8UK167DLLsmNZlaVfR0Hv3muDwVjyJuKd8ZzrF8z1eX90jXtTVc07o0/+1C9hwDM1yvfWEgAAAABJRU5ErkJggg==" style="height:26px;width:26px" alt="" data-csiid="10" data-atf="1">
+                Se Connecter Avec Google
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+        function redirectToInscription() {
+            window.location.href = "s'inscrire.html";
+        }
+
+        function redirectToIndex() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("mot-de-passe").value;
+
+            if (email !== "" && password !== "") {
+                window.location.href = "index.html";
+            } else {
+                alert("Veuillez remplir les informations sur la page s'inscrire.html d'abord.");
+            }
+        }
+
+        function validateLogin() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("mot-de-passe").value;
+
+            if (email === "" || password === "") {
+                alert("Veuillez remplir les informations sur la page se connecter.html d'abord.");
+            } else {
+                // If the information is filled, redirect to the homepage
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>
